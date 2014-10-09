@@ -1,0 +1,20 @@
+
+#wrapper {
+	width: 456px;
+	height: 456px;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.clear_both {
+	clear: both;
+}
+.box {
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	float: left;
+}

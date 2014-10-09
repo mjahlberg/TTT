@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="css" href="style.css">
+		
+	</head>
+	<body>
+		<h1>Tic Tac Toe</h1>
+		<div class = "container">
+			<div id = "wrapper">
+				<div class = "box" id = "r1c1"></div>
+				<div class = "box" id = "r1c2"></div>
+				<div class = "box" id = "r1c3"></div>
+				<div class = "clear_both"></div>
+				<div class = "box" id = "r2c1"></div>
+				<div class = "box" id = "r2c2"></div>
+				<div class = "box" id = "r2c3"></div>
+				<div class = "clear_both"></div>
+				<div class = "box" id = "r3c1"></div>
+				<div class = "box" id = "r3c2"></div>
+				<div class = "box" id = "r3c3"></div>
+			</div>
+		</div>
+
+
+		<script>
+			var count = 0;
+			var board = [[null, null, null], [null, null, null], [null, null, null]];
+			var player1 = [];
+			var player2 =[];
+
+			for (var row = 1; row < 4; row++){
+				for( var col = 1; col < 4; col++){
+
+					var myDiv = document.getElementById("r" + row + "c" + col);
+					myDiv.addEventListener("click", function(){
+						for (var count = 0; count < 10; count++) {
+							if (count % 2 == 0){
+
+								this.style.backgroundColor = "red";
+
+							} else {
+								this.style.backgroundColor = "green";
+							} 
+						}
+					});
+
+
+
+
+				// for (var x = 0; x < 8; x++){
+				// 	player1[x] = false;
+				
+				// 	for (var y = 0; y < 8; y++){
+				// 		player2[y] = false;
+				// 	}}
+
+				// then start count with each player
+
+
+					// creating a 'for' loop for player one - loops through each row and column and creates 'fasle' for each cell
+					//creating the win 'if-else' statement using booleans (&& and ||)
+
+				}
+			}	
+
+
+
+			
+		</script> 
+
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
