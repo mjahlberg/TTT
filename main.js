@@ -8,7 +8,7 @@ window.addEventListener('load', function(){
 			for(var i = 0; i < tiles.length; i++){
 				tiles[i].addEventListener('click', function(){
 					if(this.innerHTML !== ""){
-						alert("fuckoff");
+						alert("alert");
 					}else if(count % 2 === 0){
 						this.innerHTML = "X";
 						//if you wanted you would put style.backgroundimage = ""
